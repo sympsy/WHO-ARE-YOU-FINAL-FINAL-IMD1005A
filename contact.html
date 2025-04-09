@@ -4,44 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Contact</title>
+    <title>Jaheim Simpson - Contact</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/star-icon.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+</body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <button id="theme-toggle">☀️</button>
+</header>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<main class="content fade-in">
+    <h1>Contact Me</h1>
+    <p>Feel free to reach out to me using the form below.</p>
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</main>
 
-    <main class="content">
-        <h2>Contact Me</h2>
-        <p>You can reach me at your.email@email.com or use the form below:</p>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message"></textarea><br>
-            <button type="submit">Submit</button>
-        </form>
-    </main>
+<footer>
+    <p>&copy; 2024 Jaheim Simpson</p>
+</footer>
 
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
-
-    <script src="js/scripts.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 
 </html>

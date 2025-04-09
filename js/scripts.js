@@ -1,10 +1,7 @@
-// scripts.js
 
-// Theme Toggle
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 
-// Function to set the theme
 function setTheme(theme) {
     if (theme === 'dark') {
         body.classList.add('dark-mode');
@@ -17,18 +14,14 @@ function setTheme(theme) {
     }
 }
 
-// Get the saved theme from localStorage
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme) {
     setTheme(currentTheme);
-} else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    setTheme('dark');
 } else {
-    setTheme('light');
+    setTheme('dark');
 }
 
-// Toggle the theme on button click
-if (themeToggle) { // Check if themeToggle exists
+if (themeToggle) {
     themeToggle.addEventListener('click', () => {
         if (body.classList.contains('dark-mode')) {
             setTheme('light');
@@ -38,7 +31,6 @@ if (themeToggle) { // Check if themeToggle exists
     });
 }
 
-// Simulate form submission --> it's fake
 const submitButton = document.querySelector('button[type="submit"]');
 const form = document.querySelector('form');
 

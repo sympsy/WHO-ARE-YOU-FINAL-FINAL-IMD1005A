@@ -1,22 +1,18 @@
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* Adjust the ratio as needed */
     gap: 2em;
     align-items: center;
     margin-bottom: 2em;
 }
 
 .home-image {
-    /* Image container */
     text-align: center;
 }
 
 .home-image img {
     border-radius: 50%;
-    /* Circular image */
     max-width: 70%;
-    /* Adjust size as needed */
     height: auto;
     box-shadow: var(--card-shadow);
 }
@@ -24,7 +20,6 @@
 h1 {
     color: var(--accent-color);
     font-size: 2.2em;
-    /* Smaller heading */
     letter-spacing: -1px;
     margin-bottom: 0.5em;
     transition: color 0.3s ease;
@@ -37,7 +32,6 @@ p.intro {
     margin-bottom: 1.5em;
 }
 
-/* Styles for the skills visualization container */
 #skills-visualization {
     width: 100%;
     max-width: 600px;
@@ -46,11 +40,9 @@ p.intro {
     position: relative;
 }
 
-/* Styles for the skill bars */
 .skill-bar-container {
     display: flex;
     align-items: stretch;
-    /* Stretch the items vertically */
     margin-bottom: 1em;
 }
 
@@ -74,7 +66,6 @@ p.intro {
     overflow: hidden;
     position: relative;
     margin-right: 0;
-    /* Reset right margin */
     padding: 0;
 }
 
@@ -100,10 +91,8 @@ p.intro {
     padding-right: 0;
     margin: 0;
     line-height: 0.8em;
-    /* Match bar height */
 }
 
-/* Dark mode specific styles */
 .dark-mode h1 {
     color: white;
 }

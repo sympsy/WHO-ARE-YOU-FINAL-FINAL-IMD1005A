@@ -1,10 +1,8 @@
-// index.js
 
-// Skills Visualization (Home page)
 const skillsVisualization = document.getElementById('skills-visualization');
 
 if (skillsVisualization) {
-    // 1.
+
 
     const skillsData = [
         {
@@ -29,8 +27,6 @@ if (skillsVisualization) {
             skill: "Attention to Detail", proficiency: 88
         },
     ];
-
-    // 2.
 
     skillsData.forEach(skill => {
         const skillContainer = document.createElement('div');
