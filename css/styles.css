@@ -234,11 +234,8 @@ button[type="submit"]:hover {
 .skip-link {
     position: absolute;
     top: 0;
-    /* Position at the top */
     left: 50%;
-    /* Center horizontally */
     transform: translateX(-50%) translateY(-100%);
-    /* Initial position above viewport */
     background-color: #000;
     color: white;
     padding: 0.75em 1.5em;
@@ -251,5 +248,10 @@ button[type="submit"]:hover {
 
 .skip-link:focus {
     transform: translateX(-50%) translateY(0);
-    /* Bring into viewport on focus */
+}
+
+@media (max-width: 650px) {
+    .home-image {
+        display: none;
+    }
 }
